@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.0.0
 info:
   version: '3.0'
   title: EGA Submission API
@@ -606,16 +606,6 @@ paths:
       description: Delete all the samples listed.
       tags:
         - Samples
-      requestBody:
-         required: true
-         content:
-           application/json:
-             schema:
-               type: array
-               description: The sample provisional ID
-               items:
-                 type: integer
-                 example: 1
       responses:
         '200':
           description: Successful operation
@@ -1091,16 +1081,6 @@ paths:
       description: Delete all the experiments listed.
       tags:
         - Experiments
-      requestBody:
-         required: true
-         content:
-           application/json:
-             schema:
-               type: array
-               description: The experiment provisional ID
-               items:
-                 type: integer
-                 example: 1
       responses:
         '200':
           description: Successful operation
@@ -1519,16 +1499,6 @@ paths:
       description: Delete all the studies listed.
       tags:
         - Studies
-      requestBody:
-         required: true
-         content:
-           application/json:
-             schema:
-               type: array
-               description: The study provisional ID
-               items:
-                 type: integer
-                 example: 1
       responses:
         '200':
           description: Successful operation
@@ -2084,16 +2054,6 @@ paths:
       description: Delete all the runs listed.
       tags:
         - Runs
-      requestBody:
-         required: true
-         content:
-           application/json:
-             schema:
-               type: array
-               description: The run provisional ID
-               items:
-                 type: integer
-                 example: 1
       responses:
         '200':
           description: Successful operation
@@ -3503,16 +3463,6 @@ paths:
       description: Delete all the datasets listed.
       tags:
         - Datasets
-      requestBody:
-         required: true
-         content:
-           application/json:
-             schema:
-               type: array
-               description: The dataset provisional ID
-               items:
-                 type: integer
-                 example: 1
       responses:
         '200':
           description: Successful operation
