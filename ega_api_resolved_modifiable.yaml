@@ -101,6 +101,7 @@
                   "value": "Backend sleeping"
   "/submissions":
     "get":
+      "operationId": "getSubmissions"
       "description": "Get information of all submissions of the current user"
       "tags":
         - "Submissions"
@@ -181,6 +182,7 @@
                   "summary": "Not Available"
                   "value": "Backend sleeping"
     "post":
+      "operationId": "postSubmissions"
       "description": "Create a submission"
       "tags":
         - "Submissions"
